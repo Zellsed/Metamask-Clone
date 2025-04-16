@@ -9,4 +9,4 @@ This project strengthened my skills in blockchain development, React, Web3.js, a
 
 ## Project
 
-![alt text](./assets/public/metamask.gif)
+![alt text](./frontend/assets/public/metamask.gif)
