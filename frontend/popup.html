@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Zell</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card2">
+        <div class="header">
+          <div class="header_log">
+            <img src="./assets/zell.png" alt="zell" />
+          </div>
+
+          <div id="header_network" class="header_network">
+            <p>
+              <img src="./assets/SVG/question.svg" alt="Question" />
+              <span id="selected_network">Ethereum Holesky</span>
+              <img src="./assets/SVG/arrow.svg" alt="arrow" />
+            </p>
+          </div>
+        </div>
+
+        <div id="network" class="network">
+          <div class="network_title">Networks</div>
+
+          <div id="network_item" class="network_list">
+            <p class="network_item">
+              <img src="./assets/SVG/lock.svg" alt="Lock" />
+              <span> Ethereum Mainnet </span>
+            </p>
+            <p class="network_item">
+              <img src="./assets/SVG/lock.svg" alt="Lock" />
+              <span> Ethereum Holesky </span>
+            </p>
+            <p class="network_item">
+              <img src="./assets/SVG/lock.svg" alt="Lock" />
+              <span> Ethereum Sepolia </span>
+            </p>
+            <p class="network_item">
+              <img src="./assets/SVG/lock.svg" alt="Lock" />
+              <span> Polygon Mainnet </span>
+            </p>
+            <p class="network_item">
+              <img src="./assets/SVG/lock.svg" alt="Lock" />
+              <span> Polygon Amoy </span>
+            </p>
+          </div>
+
+          <button id="add_network" class="button3 addStyle">Add network</button>
+        </div>
+
+        <div id="createAccount" class="home_screen_signup">
+          <img src="./assets/zell.png" alt="Zellsed" class="home_screen_img" />
+          <h1 class="home_title">@Zellsed</h1>
+          <p>
+            Welcome to next generation crypto wallet exchange, the most complete
+            dapp solution
+          </p>
+
+          <button id="openCreate" class="button3 connectWallet">
+            Create Account
+          </button>
+
+          <p>
+            Login to your account
+            <strong class="home_title" id="loginAccount">LOGIN</strong>
+          </p>
+        </div>
+
+        <div id="create_popUp" class="create_popUp">
+          <div class="form">
+            <p id="heading">Create Account</p>
+            <div id="field">
+              <div class="field">
+                <img src="./assets/SVG/lock.svg" alt="Lock" />
+                <input
+                  id="sign_up_name"
+                  type="text"
+                  placeholder="name"
+                  class="input-field"
+                />
+              </div>
+              <p class="space"></p>
+
+              <div class="field">
+                <img src="./assets/SVG//@.svg" alt="@" />
+                <input
+                  id="sign_up_email"
+                  type="text"
+                  placeholder="email"
+                  class="input-field"
+                />
+              </div>
+              <p class="space"></p>
+
+              <div class="field">
+                <img src="./assets/SVG/lock.svg" alt="Lock" />
+                <input
+                  id="sign_up_password"
+                  type="text"
+                  placeholder="password"
+                  class="input-field"
+                />
+              </div>
+              <p class="space"></p>
+
+              <div class="field">
+                <img src="./assets/SVG/lock.svg" alt="Lock" />
+                <input
+                  id="sign_up_password_confirm"
+                  type="text"
+                  placeholder="passwordConfirm"
+                  class="input-field"
+                />
+              </div>
+            </div>
+
+            <div id="center" class="center">
+              <div class="loader">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div class="bar4"></div>
+                <div class="bar5"></div>
+                <div class="bar6"></div>
+                <div class="bar7"></div>
+                <div class="bar8"></div>
+                <div class="bar9"></div>
+                <div class="bar10"></div>
+                <div class="bar11"></div>
+                <div class="bar12"></div>
+              </div>
+            </div>
+
+            <div id="accountData" class="accountData">
+              <h3 id="accountInfo">Address</h3>
+              <p id="createdAddress">Address:</p>
+              <h3>Private Key</h3>
+              <p id="createdPrivateKey">Private Key:</p>
+              <h3>Mnemonic</h3>
+              <p id="craetedMnmonic">Mnemonic</p>
+            </div>
+
+            <button id="sign_up" class="button3 connectWallet">Sign Up</button>
+
+            <button id="goHomePage" class="button3 connectWallet">
+              Go Back
+            </button>
+          </div>
+        </div>
+
+        <div id="LoginUser" class="home_screen_login">
+          <img src="./assets/zell.png" alt="" class="home_screen_img" />
+
+          <h1 class="home_title">@Zellsed</h1>
+          <p>Welcome back! The decentralized web Dapp</p>
+          <div class="form" id="login_form">
+            <div class="field">
+              <img src="./assets/SVG//@.svg" alt="@" />
+              <input
+                id="login_email"
+                type="text"
+                placeholder="email"
+                class="input-field"
+              />
+            </div>
+
+            <div class="field">
+              <img src="./assets/SVG//@.svg" alt="@" />
+              <input
+                id="login_password"
+                type="text"
+                placeholder="password"
+                class="input-field"
+              />
+            </div>
+            <p class="space"></p>
+
+            <button id="login_up" class="button3 connectWallet">Login</button>
+            <p>
+              Login to your account
+              <strong class="home_title" id="accountCreate"
+                >Create Account</strong
+              >
+            </p>
+          </div>
+        </div>
+
+        <div id="transfer_form" class="transfer_form">
+          <div class="form">
+            <img
+              src="./assets/arrowleft.png"
+              alt=""
+              class="goBack"
+              id="goBack"
+            />
+
+            <p id="heading">Transfer Funds</p>
+
+            <div id="field">
+              <div class="field">
+                <img src="./assets/SVG/lock.svg" alt="Lock" />
+                <input
+                  id="amount"
+                  type="text"
+                  placeholder="amount"
+                  class="input-field"
+                />
+              </div>
+              <p class="space"></p>
+
+              <div class="field">
+                <img src="./assets/SVG/lock.svg" alt="Lock" />
+                <input
+                  id="address"
+                  type="text"
+                  placeholder="Transfer Address"
+                  class="input-field"
+                />
+              </div>
+              <p class="space"></p>
+            </div>
+
+            <div id="transfer_center" class="center" style="display: none">
+              <div class="loader">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div class="bar4"></div>
+                <div class="bar5"></div>
+                <div class="bar6"></div>
+                <div class="bar7"></div>
+                <div class="bar8"></div>
+                <div class="bar9"></div>
+                <div class="bar10"></div>
+                <div class="bar11"></div>
+                <div class="bar12"></div>
+              </div>
+            </div>
+
+            <small>
+              <a href="" id="link" target="_blank">Check Your Transaction</a>
+            </small>
+
+            <button id="transferFund" class="button3 connectWallet">
+              Transfer
+            </button>
+          </div>
+        </div>
+
+        <div id="import_token" class="import_token">
+          <div class="form">
+            <img
+              src="./assets/arrowleft.png"
+              id="goBack_Import"
+              class="goBack"
+              alt=""
+            />
+            <p id="heading">Import Token</p>
+
+            <div class="field">
+              <img src="./assets/SVG/@.svg" alt="@" />
+              <input
+                id="token_address"
+                type="text"
+                placeholder="token address"
+                class="input-field"
+              />
+            </div>
+
+            <div class="field">
+              <img src="./assets/SVG/@.svg" alt="@" />
+              <input
+                id="token_name"
+                type="text"
+                placeholder="token name"
+                class="input-field"
+              />
+            </div>
+
+            <div class="field">
+              <img src="./assets/SVG/@.svg" alt="@" />
+              <input
+                id="token_symbol"
+                type="text"
+                placeholder="token symbol"
+                class="input-field"
+              />
+            </div>
+            <p class="space"></p>
+
+            <button id="add_new_token" class="button3 connectWallet">
+              Import
+            </button>
+          </div>
+        </div>
+
+        <div id="import_account" class="import_account">
+          <div class="form">
+            <img
+              id="close_import_account"
+              class="goBack"
+              src="./assets/arrowleft.png"
+              alt=""
+            />
+            <p id="heading">Import Account</p>
+            <div class="field">
+              <textarea
+                type="text"
+                id="add_account_private_key"
+                class="input-field"
+                placeholder="private key"
+                name=""
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+
+            <button id="add_New_Account" class="button3 connectWallet">
+              Import
+            </button>
+
+            <div class="accountList" id="accountList"></div>
+          </div>
+        </div>
+
+        <div id="home" class="home">
+          <div class="home_header">
+            <div>
+              <p id="userAddress">Connecting...</p>
+            </div>
+            <div>
+              <p>Active</p>
+            </div>
+          </div>
+
+          <img src="./assets/zell.png" class="home_header_img" alt="" />
+
+          <h1 id="accountBalance">0.00 ETH</h1>
+
+          <div class="home_features">
+            <div id="open_Transfer" class="home_features_item">
+              <img src="./assets/send.png" class="home_features_img" alt="" />
+              <p class="text">Send</p>
+            </div>
+
+            <div id="open_Account_Import" class="home_features_item">
+              <img src="./assets/user.png" class="home_features_img" alt="" />
+              <p class="text">Account</p>
+            </div>
+
+            <div id="open_Import" class="home_features_item">
+              <img src="./assets/import.png" class="home_features_img" alt="" />
+              <p class="text">Import</p>
+            </div>
+          </div>
+
+          <div class="home_tabs">
+            <p id="open_assets">NFT</p>
+            <p id="logout">Logout</p>
+            <p id="open_activity">Activity</p>
+          </div>
+          <p class="space"></p>
+          <p class="space"></p>
+
+          <div id="assets" class="assets"></div>
+
+          <div id="activity" class="activity"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.5/ethers.umd.min.js"
+      type="application/javascript"
+    ></script> -->
+
+    <script src="libs/ethers.umd.min.js"></script>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
